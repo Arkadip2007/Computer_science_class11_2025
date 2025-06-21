@@ -1,0 +1,12 @@
+# Ignore all .exe files
+*.exe
+
+# Ignore all .out files
+*.out
+
+# Ignore files with no extension (no dot in the filename)
+# This pattern matches files with no dot in their name
+[!.]*
+
+# But do not ignore directories
+!*/
