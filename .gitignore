@@ -1,3 +1,5 @@
+#besicaly ignore garbage files in c language projects  
+
 # Ignore all .exe files
 *.exe
 
@@ -6,4 +8,6 @@
 
 # Ignore all files without an extension
 #[^.]*$
-[!.]
+#[!.]  
+
+#   _(^-^)_  #

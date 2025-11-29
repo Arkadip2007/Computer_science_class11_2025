@@ -1,6 +1,8 @@
 #include <stdio.h>
 int main()
 {
+    // Types of variables in C language
+
     int a;                //--"a"is the variable ,type -->integer
     a = 10;               // the value of a is 10   
     printf("%d", a);      // %d use to the value of . and
@@ -71,6 +73,36 @@ int main()
     printf("\n%p", n);    // %p use to the value of n (address, NULL in this case)
     //In "32-bit system" the range of void pointer is 4 bytes (0x00000000 to 0xFFFFFFFF) and in "64-bit system" the range of void pointer is 8 bytes (0x0000000000000000 to 0xFFFFFFFFFFFFFFFF)
     // Note: The void pointer is not dereferenced here, as it does not point to a specific type.
+
+
+
+    // now talk about typecasting in C language
+    // Typecasting is the process of converting a variable from one data type to another data type
+    int p = 10;
+    float q;           // q is float type variable
+    q = (float)p;     // typecasting int to float
+    printf("\nTypecasting int to float: %f", q);
+    
+
+    // now talk about only int , float , double conversion in C language
+    int r = 5;
+    int s = 2;
+
+    // rules int     +(arithmetic operator)+   int = int           (2+3=5)
+    // rules int     +(arithmetic operator)+   float = float       (2+3.5=5.5)
+    // rules int     +(arithmetic operator)+   double = double     (2+3.555555=5.555555)
+    // rules float   +(arithmetic operator)+   float = float       (2.5+3.5=6.0)
+    // rules float   +(arithmetic operator)+   double = double     (2.5+3.555555=6.055555)
+    // rules double  +(arithmetic operator)+   double = double     (2.555555+3.555555=6.111110)
+
+    // some examples of int , float , double conversion in C language in below
+    printf("\n add of r and s is %d", r + s); // return integer value 7
+    printf("\n sub of r and s is %d", r - s); // return integer value 3
+    printf("\n mul of r and s is %d", r * s); // return integer value 10
+    printf("\n div of r and s is %d", r / s); // return integer value 2 (floor value)
+    printf("\n div of r and s is %f", (float)r / (float)s); // return float value 2.500000
+    printf("\n div of r and s is %lf", (double)r / (double)s); // return double value 2.500000000000000
+    printf("\n div of s and r is %d", s / r); // return integer value 0 (floor value)
 
     return 0;
 }

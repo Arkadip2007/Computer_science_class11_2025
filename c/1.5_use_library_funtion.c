@@ -9,6 +9,7 @@ int main ()
     int a;
     printf("Enter a number: "); // also use printf function to view message
     scanf("%d", &a); //scanf function to take input from user
+    // here %d is format specifier for integer and &a is the address of variable a where the input value will be stored
     printf("You entered: %d\n", a); //printf function again to show output
 
     // now we will use getchar function from stdio.h library

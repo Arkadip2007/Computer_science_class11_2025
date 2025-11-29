@@ -1,7 +1,7 @@
 #include<stdio.h>
 int main()
 {
-    //c is programming language
+    //c is programming language  _(^-^)_
     printf("C is a general-purpose programming language.\n");
     printf("c was developed by Dennis Ritchie at Bell Labs in 1972.\n");
     //use of c language
@@ -13,7 +13,7 @@ int main()
     
     
 
-    //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~_(^-^)_~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
     //structure of c program
     //      #include <stdio.h>  //preprocessor directive, it includes standard input-output header file .header file contains declarations of functions and macros used for input and output operations like printf() and scanf(). <stdio.h> is the standard header file for input-output operations in C language.also like #include <conio.h> , #include <math.h> {--> it use for mathematical operations} etc.
@@ -92,13 +92,16 @@ int main()
     //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
     //escape sequences in c language
-    printf("Escape Sequences in C Language:\n");
-    printf("New Line: Hello\nWorld\n");
-    printf("Tab: Hello\tWorld\n");
-    printf("Backslash: C:\\Program Files\\\n");
-    printf("Double Quote: She said, \"Hello!\"\n");
-    printf("Single Quote: It\'s a beautiful day!\n");   
-
+    // #include<stdio.h>
+    // int main(){
+    // printf("Escape Sequences in C Language:\n");
+    // printf("New Line: Hello\nWorld\n");
+    // printf("Tab: Hello\tWorld\n");
+    // printf("Backslash: C:\\Program Files\\\n");
+    // printf("Double Quote: She said, \"Hello!\"\n");
+    // printf("Single Quote: It\'s a beautiful day!\n");   
+    // return 0;
+    // } *plz run this code separately ,you can also run code by "Code Runner" extension in vs code only work select the part of code ;)
     //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
     //now tooking about comments in c language
@@ -113,6 +116,17 @@ int main()
     // all comments are ignored by the compiler and are used to explain the code to human readers.
 
     //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+    // some example of comments in c language
+    // This program calculates the sum of two numbers
+    int a = 5; // First Number 
+    int b = 6; // second Number 
+    int sum = a + b; // sum of a and b
+
+    printf("sum of a and b is %d\n", sum);
+    printf("sum of %d and %d is %d\n", a, b, a + b ); // ---> it also work
+
+
 
 
     // now tooking about data types in c language       
