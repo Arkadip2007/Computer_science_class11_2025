@@ -10,3 +10,6 @@
 
 # But do not ignore directories
 !*/
+
+# ignore file with no extension
+**/[^.]*
