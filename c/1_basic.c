@@ -2,6 +2,21 @@
 int main()
 {
     //c is programming language  _(^-^)_
+    //C → Low-level / mid-level language (closer to hardware, more control) 
+    //C is much faster than python
+    //C → Procedural programming paradigm (step-by-step instructions) unlike Python → Multi-paradigm (supports procedural, object-oriented, and functional programming)
+    //C → Manual memory management unlike Python → Automatic memory management (garbage collection)
+    //C → Compiled language (source code translated to machine code before* execution)
+    //C → Statically typed (variable types declared at compile-time) unlike Python → Dynam
+    //But C is not object-oriented language like C++,Java etc. 
+    // that`s C is used 
+    //  .OS kernel development (like Linux kernel)
+    //  .Embedded systems (like microcontrollers)
+    //  .drivers (like device drivers for hardware)
+
+
+
+
     printf("C is a general-purpose programming language.\n");
     printf("c was developed by Dennis Ritchie at Bell Labs in 1972.\n");
     //use of c language
