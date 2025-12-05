@@ -3,9 +3,9 @@
 int main()
 {
     int a;    //  declaration instruction
-    a=5; // value of a is 5 // arithmetic instruction
+    a=6; // value of a is 5 // arithmetic instruction
     int b;
-    a=b; // now value of b is also 5 
+    b=a; // now value of b is also 5 .wrong a=b besause b is not initialized yet
     printf("Value of a: %d\n", a);
     printf("Value of b: %d\n", b);
 
@@ -42,7 +42,7 @@ int main()
     printf("Remainder when %d is divided by %d is %d\n", p, q, p % q); // it will print 1
     printf("Remainder when %d is divided by %d is %d\n", p, q, -p % q); // it will print -1
     printf("Remainder when %d is divided by %d is %d\n", p, -q, p % -q); // it will print 1 because numerator sign is taken
-    printf("Remainder when %d is divided by %d is %d\n", p, q, -p % -q); // it will print -1
+    printf("Remainder when %d is divided by %d is %d\n", -p, -q, -p % -q); // it will print -1
     
     
     

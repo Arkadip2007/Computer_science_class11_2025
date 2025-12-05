@@ -99,9 +99,48 @@ int main()
 
 
     //end of basic operators in C language
-
-
     //advanced operators will be discussed later
+
+    // all operators precedence order
+
+
+    //     1.{High} ()  []  ->  .  ++{post}     left to right
+    //             --{post}  typecast
+
+    //     2.   ++{pre}  --{pre}  +{unary}      right to left
+    //          -{unary}  !  ~  *{pointer}  
+    //             &{address}  sizeof
+
+    //     3.         *  /  %                   left to right
+
+    //     4.           +  -                    left to right
+
+    //     5.          <<  >>                   left to right
+
+    //     6.       <  <=  >  >=                left to right
+ 
+    //     7.          ==  !=                   left to right
+
+    //     8.            &                      left to right
+
+    //     9.            ^                      left to right
+
+    //     10.           |                      left to right
+
+    //     11.           &&                     left to right
+
+    //     12.           ||                     left to right
+
+    //     13    {condition}?{ex1}:{ex2}        right to left
+
+    //     14.      =  +=  -=  *=               right to left
+    //             /=  %=  &=  |= 
+    //              ^=  <<=  >>=
+
+    //     15.{low}      ,                      left to right
+
+    // but use parentheses to change precedence
+    
 
    
 

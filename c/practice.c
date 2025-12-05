@@ -68,7 +68,19 @@ int main()
     //end of basic problems
 
 
-    //
+    //lesson 2: instructions and operators
+    // problem_1|| find largest of three numbers using conditional operator
+        int n1, n2, n3, largest;
+        printf("enter three numbers \n");
+        scanf("%d %d %d", &n1, &n2, &n3);
+        largest = (n1 > n2) ? ( (n1 > n3) ? n1 : n3 ) : ( (n2 > n3) ? n2 : n3 );
+        printf("largest number is %d \n", largest); 
+
+
+    //problem_2|| which of following is invalid in C ?
+    //   (i)  
+    
+    
 
     return 0;
 }
