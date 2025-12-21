@@ -78,7 +78,9 @@ int main()
 
 
     //problem_2|| which of following is invalid in C ?
-    //   (i)  
+    //   (i)     int a; b=a;                 [wrong]
+    //   (ii)    int v = 3^3;                [wrong but not return error,because ^ is bitwise XOR operator]
+    //   (iii)   char dt = '21 dec 2020';    [wrong]
     
     
 
