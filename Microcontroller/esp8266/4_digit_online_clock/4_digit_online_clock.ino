@@ -1,57 +1,28 @@
-#include <NTPClient.h>
-#include <ESP8266WiFi.h>
-#include <WiFiUdp.h>
-#include <TM1637Display.h>
+#include <Wire.h>
+#include <LiquidCrystal_I2C.h>
 
-#define CLK D2
-#define DIO D3
+LiquidCrystal_I2C lcd(0x27, 16, 2);
 
-TM1637Display display(CLK, DIO);
-
-const char *ssid     = "Arkadip";
-const char *password = "123456@#";
-
-// India UTC +5:30
-const long utcOffsetInSeconds = 19800;
-
-WiFiUDP ntpUDP;
-NTPClient timeClient(ntpUDP, "pool.ntp.org", utcOffsetInSeconds);
+// 5x8 pixel map
+byte onePixel[8] = {
+  B00001,
+  B00011,
+  B00111,  // <-- middle pixel ON
+  B00000,
+  B00000,
+  B00000,
+  B00000,
+  B00000
+};
 
 void setup() {
-  Serial.begin(115200);
+  lcd.init();
+  lcd.backlight();
 
-  display.setBrightness(7);
-  display.clear();
-
-  WiFi.begin(ssid, password);
-  Serial.print("Connecting to WiFi");
-
-  while (WiFi.status() != WL_CONNECTED) {
-    delay(500);
-    Serial.print(".");
-  }
-
-  Serial.println("\nWiFi Connected");
-
-  timeClient.begin();
-  timeClient.update();   // initial sync
+  lcd.createChar(0, onePixel); // custom char stored at location 0
+  lcd.setCursor(5, 0);         // position on LCD
+  lcd.write(0);                // display custom char
 }
 
 void loop() {
-  if (WiFi.status() != WL_CONNECTED) {
-    WiFi.reconnect();
-    return;
-  }
-
-  timeClient.update();
-
-  int timeHM = timeClient.getHours() * 100 + timeClient.getMinutes();
-  int seconds = timeClient.getSeconds();
-
-  // Blink colon every second
-  if (seconds % 2 == 0) {
-    display.showNumberDecEx(timeHM, 0b01000000, true);
-  } else {
-    display.showNumberDecEx(timeHM, 0b00000000, true);
-  }
 }

@@ -82,7 +82,32 @@ int main()
     //   (ii)    int v = 3^3;                [wrong but not return error,because ^ is bitwise XOR operator]
     //   (iii)   char dt = '21 dec 2020';    [wrong]
     
+
+    //problem_3|| write a program to check whether a number is divisible by 97 or not but not using if statement
+        int number_97,check;
+        printf("enter a number \n");
+        scanf("%d", &number_97);
+        check = number_97 % 97;
+        
+        printf("when output is zero ,so your number is divisible by 97,if not - not divisible\n ");
+        printf("your output is %d \n", check);
+
     
+    //problem_4|| 
+          //  3.0 + 1 will be :
+          //a) integer 4
+          //b) float 4.0
+          //c) double 4.0
+
+          // answer is c) double 4.0 because 3.0 is double and in operation other integer value will be converted to double.
+
+
+    
+
+
+    
+
+            
 
     return 0;
 }
