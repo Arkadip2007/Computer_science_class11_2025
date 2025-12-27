@@ -26,7 +26,7 @@ int main()
         printf("enter redius __ \n");
         scanf("%d", &redius);
         int area_circle = 3.14 * redius * redius;
-        printf("Area of the circle is %d",area_circle);
+        printf("Area of the circle is %d\n",area_circle);
 
         
     // problem_3|| convert tempareture(*C --> *F)
@@ -34,13 +34,13 @@ int main()
         F = (C * 9/5) + 32;
         printf("enter tempareture in Celsius (*C) ");
         scanf("%d", &C);
-        printf("tempareture in Fahrenheit is %d *F",F);
+        printf("tempareture in Fahrenheit is %d *F\n",F);
 
 
     // problem_4|| swap two numbers
         int a,b,temp;
         printf("enter value of a and b \n");
-        scanf("%d %d", &a,&b);
+        scanf("%d %d", &a,&b);// input value in terminal use space to separate values
         // swaping logic
         temp = a;
         a = b;
@@ -50,7 +50,7 @@ int main()
         //alternate swaping logic without using third variable
         int x,y;
         printf("enter value of x and y \n");
-        scanf("%d %d", &x,&y);
+        scanf("%d %d", &x,&y); // input value in terminal use space to separate values
         x = x + y; // x now becomes 15
         y = x - y; // y becomes 10
         x = x - y; // x becomes 5
