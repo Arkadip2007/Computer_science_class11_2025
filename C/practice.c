@@ -101,9 +101,6 @@ int main()
 
           // answer is c) double 4.0 because 3.0 is double and in operation other integer value will be converted to double.
 
-    //
-    
-
 
     
 
