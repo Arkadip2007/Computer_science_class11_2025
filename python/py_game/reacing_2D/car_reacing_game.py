@@ -3,7 +3,7 @@ import os
 import random
 import pygame
 
-WIDTH, HEIGHT = 480, 640
+WIDTH, HEIGHT = 1000,750
 FPS = 60
 
 def draw_car(surface, rect):
