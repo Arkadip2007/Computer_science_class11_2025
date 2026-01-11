@@ -5,7 +5,7 @@ import pygame
 
 
 WIDTH, HEIGHT = 500,750
-FPS = 10
+FPS = 100
 
 def draw_car(surface, rect):
 	# Draw a simple stylized car using rectangles, polygon and circles
