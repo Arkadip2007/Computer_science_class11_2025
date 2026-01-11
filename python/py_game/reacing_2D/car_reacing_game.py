@@ -3,6 +3,7 @@ import os
 import random
 import pygame
 
+
 WIDTH, HEIGHT = 500,750
 FPS = 10
 
