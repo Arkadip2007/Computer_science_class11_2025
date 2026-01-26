@@ -1,0 +1,27 @@
+# ===== Virtual environments =====
+venv/
+.venv/
+env/
+.env/
+
+# ===== Python cache =====
+__pycache__/
+*.py[cod]
+
+# ===== Python build / distribution =====
+build/
+dist/
+*.egg-info/
+
+# ===== Test / coverage =====
+.pytest_cache/
+.coverage
+htmlcov/
+
+# ===== Jupyter =====
+.ipynb_checkpoints/
+
+# ===== Environment variables =====
+.env.local
+.env.dev
+.env.prod
